@@ -58,6 +58,3 @@ class IMDBScraper:
         """
         new_link = "/".join(link.split("/")[0:3])
         return "http://www.imdb.com" + new_link
-
-imdb_scraper = IMDBScraper()
-imdb_scraper.download_data()

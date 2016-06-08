@@ -1,8 +1,8 @@
 import os
 import glob
-import pprint as pp
 import re
 from bs4 import BeautifulSoup
+from helpers import money_converter
 class IMDBDataParser:
     """ Parses the downloaded data of each movie and prepares the data
     for insertion into a database
@@ -32,12 +32,12 @@ class IMDBDataParser:
             d['rating'] = main_top.find('span', {'itemprop': 'ratingValue'}).text
 
             title_bar = main_top.select('div.titleBar')[0]
-            d['title'] = title_bar.h1.contents[0].encode('utf-8').strip()
+            d['title'] = title_bar.h1.contents[0].strip().encode('utf-8')
 
             subtext = title_bar.find('div', class_='subtext')
             content_rating = subtext.find('meta', {'itemprop': 'contentRating'})
             d['content_rating'] = content_rating['content'] if content_rating else None
-            d['duration'] = subtext.find('time', {'itemprop': 'duration'})['datetime']
+            d['duration'] = int(subtext.find('time', {'itemprop': 'duration'})['datetime'][2:-1])
             d['genres'] = [g.text.encode('utf-8') for g in subtext.find_all('span', {'itemprop': 'genre'})]
             d['date_published'] = subtext.find('meta', {'itemprop': 'datePublished'})['content']
 
@@ -54,19 +54,19 @@ class IMDBDataParser:
             cast = main_bottom.find('table', class_='cast_list').find_all('tr', class_=['even', 'odd'])
             for a in cast:
                 actor = {}
-                actor['actor'] = a.find('span', {'itemprop': 'name'}).text.encode('utf-8').strip()
-                actor['character'] = a.select('td.character')[0].div.text.encode('utf-8').strip().replace('\n', '').replace('   ', '')
+                actor['actor'] = a.find('span', {'itemprop': 'name'}).text.strip().encode('utf-8')
+                actor['character'] = a.select('td.character')[0].div.text.strip().encode('utf-8').replace('\n', '').replace('   ', '')
                 d['cast'].append(actor)
 
             title_details = main_bottom.find('div', id='titleDetails')
-            d['country'] = [[m.text.encode('utf-8').strip() for m in c.find_all('a')]
-                            for c in title_details.find_all(self.a_contains_country)]
+            d['country'] =  [r.text for r in title_details.find(self.a_contains_country).find_all('a')]
 
             budget = title_details.find(self.div_contains_budget)
             gross = title_details.find(self.div_contains_gross)
-            d['box_office']['budget'] = budget.contents[2].encode('utf-8').strip() if budget else None
-            d['box_office']['gross'] = gross.contents[2].encode('utf-8').strip() if gross else None
-            pp.pprint(d)
+            d['box_office']['budget'] = money_converter(budget.contents[2].encode('utf-8').strip()) if budget else None
+            d['box_office']['gross'] = money_converter(gross.contents[2].encode('utf-8').strip()) if gross else None
+            print d['box_office']['budget']
+            return d
 
     def a_contains_country(self, elem):
         if elem.a:
@@ -88,7 +88,8 @@ class IMDBDataParser:
         movie_list = []
         filenames = glob.glob(directory + '/*.html')
         for f in filenames:
-            self.parse_file(f)
+            movie_list.append(self.parse_file(f))
+        return movie_list
 
 x = IMDBDataParser()
 x.parse_files('pages')
