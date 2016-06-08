@@ -16,10 +16,10 @@ class IMDBScraper:
         content = requests.get(self.TOP_250_LIST)
         soup = BeautifulSoup(content.content, 'lxml')
         movies = soup.select('tbody.lister-list tr')
-        for m in movies[:20]:
+        for m in movies:
             title_column = m.select('td.titleColumn')
             link = self.format_link(title_column[0].a['href'])
-            title = self.format_title(title_column[0].a.string)
+            title = self.format_title(title_column[0].a.string.encode('utf-8'))
             path = 'pages/{}.html'.format(title)
             if os.path.isfile(path):
                 continue
