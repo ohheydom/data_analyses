@@ -4,14 +4,14 @@ import re
 from bs4 import BeautifulSoup
 from helpers import money_converter
 class IMDBDataParser:
-    """ Parses the downloaded data of each movie and prepares the data
+    """Parses the downloaded data of each movie and prepares the data
     for insertion into a database
     """
     def __init__(self):
         pass
 
     def parse_file(self, filename):
-        """ Parses the file into a python dictionary
+        """Parses the file into a python dictionary
 
         Parameters
         ----------
