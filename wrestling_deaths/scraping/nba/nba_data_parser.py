@@ -61,4 +61,13 @@ class NBADataParser:
         return p
     
 b = NBADataParser()
-print b.find_errors("players/xml_data/c.xml")
+print b.find_errors("players/xml_data/ef.xml")
+"""Use the following to fix errors in the xml
+{{Infobox NBA biography
+| name = 
+| birth_date = {{birth date and age|}}
+| birth_place = [[ ]]
+| death_date = {{death date and age|}}
+| death_place = [[ ]]
+}}
+"""

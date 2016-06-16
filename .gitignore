@@ -3,6 +3,6 @@
 *.pyc
 /imdb_top_250/pages
 /wrestling_deaths/csvs
-/wrestling_deaths/wwe
-/wrestling_deaths/nba/players
-/wrestling_deaths/nfl
+/wrestling_deaths/scraping/nba/players
+/wrestling_deaths/scraping/nhl/players
+/wrestling_deaths/scraping/wrestling/wrestlers
