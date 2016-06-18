@@ -19,8 +19,12 @@ class WikipediaScraper:
         return querystring + pages
 
     def download_data(self, folder):
-
         """Downloads the XML file for each individual letter
+
+        Arguments
+        ---------
+        folder : str
+            Folder location of the list of athletes
         """
 
         files = []
@@ -32,7 +36,7 @@ class WikipediaScraper:
 
         directory = directory.split("/")[0]
         for f in files:
-            names = self.file_to_list(f)
+            names = file_to_list(f)
             querystring = self.format_querystring(names)
             r = requests.get(url + querystring)
             newfile = '{}/xml_data/{}.xml'.format(directory, f.split('/')[-1])
@@ -51,6 +55,8 @@ class WikipediaScraper:
             List of suffixes to add to the link to fetch the data
         select_statement : str
             Statement to be used to find all the link elements
+        folder_prefix : str
+            Folder location to save the list of athletes to
         file_prefix : str
             String to prepend to every saved file
         """
@@ -65,10 +71,10 @@ class WikipediaScraper:
                     if v:
                         v = v['href']
                         if v.startswith('/wiki'):
-                            f.write(v[6:] + '\n')
+                            f.write(urllib.unquote(v[6:]) + '\n')
                 return
         for s in suffixes:
-            content = requests.get(l+s)
+            content = requests.get(link+s)
             soup = BeautifulSoup(content.content, 'lxml')
             athletes = soup.select(select_statement)
             with open('{}/{}_{}_player_list'.format(folder_prefix, file_prefix, s), 'w') as f:
@@ -77,20 +83,27 @@ class WikipediaScraper:
                     if v:
                         v = v['href']
                         if v.startswith('/wiki'):
-                            f.write(v[6:] + '\n')
+                            f.write(urllib.unquote(v[6:]) + '\n')
 
-w = WikipediaScraper()
-
-# Scrape NBA Data
+## NBA
 suffixes = ['(A)', '(B)', '(C)', '(D)', '(E-F)', '(G)', '(H)', '(I-J)', '(K)', '(L)', '(M)', '(N-O)', '(P-Q)', '(R)', '(S)', '(T-V)', '(W-Z)']
 link = "https://en.wikipedia.org/wiki/List_of_National_Basketball_Association_players_"
 select_statement = 'div#mw-content-text div.div-col ul li'
 file_prefix = 'nba'
+folder_prefix = 'nba/name_lists'
+nba = {'suffixes': suffixes, 'link': link, 'select_statement': select_statement,
+        'file_prefix': file_prefix, 'folder_prefix': folder_prefix}
 
-#w.save_lists_of_athletes(link, suffixes, select_statement, file_prefix)
-#w.download_data("{}/name_lists".format(file_prefix)
-
-# Scrape Wrestling Data
+## NHL
+suffixes = ['(A)', '(B)', '(C)', '(D)', '(E)', '(F)', '(G)', '(H)', '(I)', 
+    '(J)', '(K)', '(L)', '(M)', '(N)', '(O)', '(P)', '(Q)', '(R)', '(S)', 
+    '(T)', '(U-V)', '(W)', '(X-Z)']
+link = "https://en.wikipedia.org/wiki/List_of_NHL_players_"
+select_statement = 'div#mw-content-text div.div-col ul li'
+file_prefix = 'nhl'
+folder_prefix = 'nhl/name_lists'
+nhl = {'suffixes': suffixes, 'link': link, 'select_statement': select_statement,
+        'file_prefix': file_prefix, 'folder_prefix': folder_prefix}
 
 ## WWE
 suffixes = ['(A-C)', '(D-H)', '(I-M)', '(N-R)', '(S-Z)']
@@ -98,9 +111,8 @@ link = 'https://en.wikipedia.org/wiki/List_of_WWE_alumni_'
 select_statement = 'span.sorttext'
 file_prefix = 'wwe_alumni'
 folder_prefix = 'wrestling/name_lists'
-
-#w.save_lists_of_athletes(link, suffixes, select_statement, folder_prefix, file_prefix)
-#w.download_data("{}/name_lists/wwe".format(file_prefix)
+wwe = {'suffixes': suffixes, 'link': link, 'select_statement': select_statement,
+        'file_prefix': file_prefix, 'folder_prefix': folder_prefix}
 
 ## ECW
 suffixes = None
@@ -108,16 +120,20 @@ link = 'https://en.wikipedia.org/wiki/List_of_Extreme_Championship_Wrestling_alu
 select_statement = 'span.sorttext'
 file_prefix = 'ecw_alumni'
 folder_prefix = 'wrestling/name_lists'
-
-#w.save_lists_of_athletes(link, suffixes, select_statement, folder_prefix, file_prefix)
-#w.download_data("{}/name_lists/ecw".format(file_prefix)
+ecw = {'suffixes': suffixes, 'link': link, 'select_statement': select_statement,
+        'file_prefix': file_prefix, 'folder_prefix': folder_prefix}
 
 ## WCW
-suffixes = ['()', '()']
-link = 'https://...'
+suffixes = None
+link = 'https://en.wikipedia.org/wiki/List_of_World_Championship_Wrestling_alumni'
 select_statement = 'span.sorttext'
 file_prefix = 'wcw_alumni'
 folder_prefix = 'wrestling/name_lists'
+wcw = {'suffixes': suffixes, 'link': link, 'select_statement': select_statement,
+        'file_prefix': file_prefix, 'folder_prefix': folder_prefix}
 
-#w.save_lists_of_athletes(link, suffixes, select_statement, folder_prefix, file_prefix)
-#w.download_data("{}/name_lists/wcw".format(file_prefix)
+w = WikipediaScraper()
+l = None
+#w.save_lists_of_athletes(l['link'], l['suffixes'], l['select_statement'],
+#        l['folder_prefix'], l['file_prefix'])
+#w.download_data("{}/ecw".format(l['folder_prefix']))
