@@ -132,8 +132,55 @@ folder_prefix = 'wrestling/name_lists'
 wcw = {'suffixes': suffixes, 'link': link, 'select_statement': select_statement,
         'file_prefix': file_prefix, 'folder_prefix': folder_prefix}
 
-w = WikipediaScraper()
-l = None
+## AWA
+suffixes = None
+link = 'https://en.wikipedia.org/wiki/List_of_American_Wrestling_Association_alumni'
+select_statement = 'div#mw-content-text ul li'
+file_prefix = 'awa_alumni'
+folder_prefix = 'wrestling/name_lists'
+awa = {'suffixes': suffixes, 'link': link, 'select_statement': select_statement,
+        'file_prefix': file_prefix, 'folder_prefix': folder_prefix}
+
+## NWA
+suffixes = None
+link = 'https://en.wikipedia.org/wiki/List_of_NWA_Central_States_alumni'
+select_statement = 'span.sorttext'
+file_prefix = 'nwa_alumni'
+folder_prefix = 'wrestling/name_lists'
+nwa = {'suffixes': suffixes, 'link': link, 'select_statement': select_statement,
+        'file_prefix': file_prefix, 'folder_prefix': folder_prefix}
+
+## TNA Current
+suffixes = None
+link = 'https://en.wikipedia.org/wiki/List_of_Total_Nonstop_Action_Wrestling_personnel'
+select_statement = 'span.vcard span.fn'
+file_prefix = 'tna_current'
+folder_prefix = 'wrestling/name_lists'
+tna_current = {'suffixes': suffixes, 'link': link, 'select_statement': select_statement,
+        'file_prefix': file_prefix, 'folder_prefix': folder_prefix}
+
+## TNA Alumni
+suffixes = None
+link = 'https://en.wikipedia.org/wiki/List_of_Total_Nonstop_Action_Wrestling_alumni'
+select_statement = 'span.sorttext'
+file_prefix = 'tna_alumni'
+folder_prefix = 'wrestling/name_lists'
+tna_alumni = {'suffixes': suffixes, 'link': link, 'select_statement': select_statement,
+        'file_prefix': file_prefix, 'folder_prefix': folder_prefix}
+
+## Stampede Wrestling
+suffixes = None
+link = 'https://en.wikipedia.org/wiki/List_of_Stampede_Wrestling_alumni'
+select_statement = 'span.sorttext'
+file_prefix = 'stampede_alumni'
+folder_prefix = 'wrestling/name_lists'
+stampede = {'suffixes': suffixes, 'link': link, 'select_statement': select_statement,
+        'file_prefix': file_prefix, 'folder_prefix': folder_prefix}
+
+#w = WikipediaScraper()
+#l = None
 #w.save_lists_of_athletes(l['link'], l['suffixes'], l['select_statement'],
 #        l['folder_prefix'], l['file_prefix'])
-#w.download_data("{}/ecw".format(l['folder_prefix']))
+#w.download_data("{}/awa".format(l['folder_prefix']))
+
+
