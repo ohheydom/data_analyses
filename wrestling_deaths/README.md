@@ -4,8 +4,8 @@
 
 I'm currently working on scraping all of the data.
 
-- [ ] Wrestling Data (WWE, WCW, NWA, AWA, ECW)
+- [X] Wrestling Data (WWE, WCW, NWA, AWA, ECW, TNA, Stampede)
 - [X] MLB
 - [X] NFL
-- [ ] NHL
-- [ ] NBA
+- [X] NHL
+- [X] NBA

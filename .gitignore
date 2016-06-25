@@ -1,8 +1,6 @@
 *.html
-*.csv
 *.pyc
 /imdb_top_250/pages
-/wrestling_deaths/csvs
 /wrestling_deaths/scraping/nba
 /wrestling_deaths/scraping/nhl
 /wrestling_deaths/scraping/wrestling
