@@ -39,7 +39,7 @@ class WikipediaScraper:
             names = file_to_list(f)
             querystring = self.format_querystring(names)
             r = requests.get(url + querystring)
-            newfile = '{}/xml_data/{}.xml'.format(directory, f.split('/')[-1])
+            newfile = '{}/{}.xml'.format(directory, f.split('/')[-1])
             with open(newfile, "wr") as xfile:
                 xfile.write(r.content)
 
@@ -75,5 +75,5 @@ class WikipediaScraper:
 link = 'https://en.wikipedia.org/wiki/List_of_American_Civil_War_battles'
 folder_prefix = 'battles/'
 w = WikipediaScraper()
-w.save_lists_of_battles(link, folder_prefix)
-#w.download_data("{}/awa".format(l['folder_prefix']))
+#w.save_lists_of_battles(link, folder_prefix)
+w.download_data(folder_prefix)

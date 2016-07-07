@@ -1,5 +1,6 @@
 *.html
 *.pyc
+*.xml
 /imdb_top_250/pages
 /wrestling_deaths/scraping/nba
 /wrestling_deaths/scraping/nhl
