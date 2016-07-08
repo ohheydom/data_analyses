@@ -45,6 +45,6 @@ Fields
 
 ### Todo
 
-Incorporate the sizes of the armies under u_strength, c_strength, i_strength
-Start analyzing the data
-Put data onto a map using longitude and latitude
+* Incorporate the sizes of the armies under u_strength, c_strength, i_strength
+* Start analyzing the data
+* Put data onto a map using longitude and latitude

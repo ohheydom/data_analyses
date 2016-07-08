@@ -2,57 +2,67 @@
 import re
 import pandas as pd
 
+ARMIES = {
+    'cavalry company': 100,
+    'regiment': 800,
+    'infantry regiment': 1000,
+    'cavalry regiment': 1000,
+    'brigade': 2600,
+    'division': 8000,
+    'corps': 26000,
+    'army': 80000,
+        }
 STATES = {
-        'Alabama': 'AL',
-        'Alaska': 'AK',
-        'Arizona': 'AZ',
-        'Arkansas': 'AR',
-        'California': 'CA',
-        'Colorado': 'CO',
-        'Connecticut': 'CT',
-        'Delaware': 'DE',
-        'Florida': 'FL',
-        'Georgia': 'GA',
-        'Hawaii': 'HI',
-        'Idaho': 'ID',
-        'Illinois': 'IL',
-        'Indiana': 'IN',
-        'Iowa': 'IA',
-        'Kansas': 'KS',
-        'Kentucky': 'KY',
-        'Louisiana': 'LA',
-        'Maine': 'ME',
-        'Maryland': 'MD',
-        'Massachusetts': 'MA',
-        'Michigan': 'MI',
-        'Minnesota': 'MN',
-        'Mississippi': 'MS',
-        'Missouri': 'MO',
-        'Montana': 'MT',
-        'Nebraska': 'NE',
-        'Nevada': 'NV',
-        'New Hampshire': 'NH',
-        'New Jersey': 'NJ',
-        'New Mexico': 'NM',
-        'New York': 'NY',
-        'North Carolina': 'NC',
-        'North Dakota': 'ND',
-        'Ohio': 'OH',
-        'Oklahoma': 'OK',
-        'Oregon': 'OR',
-        'Pennsylvania': 'PA',
-        'Rhode Island': 'RI',
-        'South Carolina': 'SC',
-        'South Dakota': 'SD',
-        'Tennessee': 'TN',
-        'Texas': 'TX',
-        'Utah': 'UT',
-        'Vermont': 'VT',
-        'Virginia': 'VA',
-        'Washington': 'WA',
-        'West Virginia': 'WV',
-        'Wisconsin': 'WI',
-        'Wyoming': 'WY',
+    'Alabama': 'AL',
+    'Alaska': 'AK',
+    'Arizona': 'AZ',
+    'Arkansas': 'AR',
+    'California': 'CA',
+    'Colorado': 'CO',
+    'Connecticut': 'CT',
+    'Delaware': 'DE',
+    'Florida': 'FL',
+    'Georgia': 'GA',
+    'Hawaii': 'HI',
+    'Idaho': 'ID',
+    'Illinois': 'IL',
+    'Indiana': 'IN',
+    'Iowa': 'IA',
+    'Kansas': 'KS',
+    'Kentucky': 'KY',
+    'Louisiana': 'LA',
+    'Maine': 'ME',
+    'Maryland': 'MD',
+    'Massachusetts': 'MA',
+    'Michigan': 'MI',
+    'Minnesota': 'MN',
+    'Mississippi': 'MS',
+    'Missouri': 'MO',
+    'Montana': 'MT',
+    'Nebraska': 'NE',
+    'Nevada': 'NV',
+    'New Hampshire': 'NH',
+    'New Jersey': 'NJ',
+    'New Mexico': 'NM',
+    'New York': 'NY',
+    'North Carolina': 'NC',
+    'North Dakota': 'ND',
+    'Ohio': 'OH',
+    'Oklahoma': 'OK',
+    'Oregon': 'OR',
+    'Pennsylvania': 'PA',
+    'Rhode Island': 'RI',
+    'South Carolina': 'SC',
+    'South Dakota': 'SD',
+    'Tennessee': 'TN',
+    'Texas': 'TX',
+    'Utah': 'UT',
+    'Vermont': 'VT',
+    'Virginia': 'VA',
+    'Washington': 'WA',
+    'West Virginia': 'WV',
+    'Wisconsin': 'WI',
+    'Wyoming': 'WY',
 }
 
 def file_to_list(f):
@@ -162,6 +172,40 @@ def parse_casualties(st):
         return casualties['wounded'], casualties['captured/missing'], casualties['killed'], casualties['total']
     except:
         return '', '', '', st
+
+def parse_strength(st):
+    """ parse_strength takes an unmodified input string and attempts to extract the
+    size of the army
+    
+    Arguments
+    ---------
+    st : string
+        Unmodified input string from mediawiki
+
+    Returns
+    -------
+    string
+        Size of the army
+    """
+
+    st = st.strip()
+    if st.lower() == 'unknown':
+        return ''
+    if st.lower() == 'none' or st == '0':
+        return '0'
+    matcher = re.compile("([~\d,-]+)\s?(range)?-?(total|brigade|division|regiment|cavalry company|infantry regiment)+", re.I)
+    matches = re.findall(matcher, st)
+    if matches:
+        adder = 0
+        for m in matches:
+            v = m[0].replace(',', '')
+            r = m[1]
+            d = m[2].strip().lower()
+            if d == 'total':
+                return v
+            adder += int(v)*ARMIES[d]
+        return adder
+    return st.replace(',', '')
 
 def add_casualties(d):
     adder_low = 0

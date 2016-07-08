@@ -3,7 +3,7 @@ import mwparserfromhell as mw
 import pandas as pd
 import re
 from os import walk
-from helpers import parse_coordinates, print_full, city_state_split, parse_casualties, parse_combatant, parse_result
+from helpers import parse_coordinates, print_full, city_state_split, parse_casualties, parse_combatant, parse_result, parse_strength
 import pprint
 
 class WikipediaXMLToCSV:
@@ -37,10 +37,10 @@ class WikipediaXMLToCSV:
         df.drop(['start_date', 'end_date'], axis=1, inplace=True)
         df = df[['conflict', 'city', 'state', 'latitude', 'longitude', 'start_year', \
                 'start_month', 'start_day', 'end_year', 'end_month', 'end_day', 'combatants', \
-                'result', 'uc_wounded', 'uc_captured', 'uc_killed', 'uc_total', 'cc_wounded', \
-                'cc_captured', 'cc_killed', 'cc_total', 'ic_wounded', \
-                'ic_captured', 'ic_killed', 'ic_total', 'a_wounded', 'a_captured', \
-                'a_killed', 'a_total']]
+                'result', 'u_strength', 'c_strength', 'i_strength', 'uc_wounded', \
+                'uc_captured', 'uc_killed', 'uc_total', 'cc_wounded', 'cc_captured', \
+                'cc_killed', 'cc_total', 'ic_wounded', 'ic_captured', 'ic_killed', \
+                'ic_total', 'a_wounded', 'a_captured', 'a_killed', 'a_total']]
         df = df.sort_values('conflict')
         df.to_csv(newfile, encoding='utf-8', index=False)
 
@@ -84,6 +84,8 @@ class WikipediaXMLToCSV:
             casualties3 = {}
             combatant1 = ''
             combatant2 = ''
+            strength1 = ''
+            strength2 = ''
             battle_text = mw.parse(page_text.text)
             coords = False
             for t in battle_text.filter_templates():
@@ -94,6 +96,11 @@ class WikipediaXMLToCSV:
                     continue
 
                 if t.name.lower().strip() in infoboxes:
+                    #Strength
+                    if 'strength1' in t:
+                        strength1 = parse_strength(t.get('strength1').value.encode('utf-8'))
+                    if 'strength2' in t:
+                        strength2 = parse_strength(t.get('strength2').value.encode('utf-8'))
                     #Results
                     if 'result' in t:
                         d['result'] = parse_result(t.get('result').value.encode('utf-8'))
@@ -116,23 +123,29 @@ class WikipediaXMLToCSV:
                         if combatant1 == 0:
                             d['uc_wounded'], d['uc_captured'], \
                             d['uc_killed'], d['uc_total'] = casualties1
+                            d['u_strength'] = strength1
                         if combatant1 == 1:
                             d['cc_wounded'], d['cc_captured'], \
                             d['cc_killed'], d['cc_total'] = casualties1
+                            d['c_strength'] = strength1
                         if combatant1 == 2:
                             d['ic_wounded'], d['ic_captured'], \
                             d['ic_killed'], d['ic_total'] = casualties1
+                            d['i_strength'] = strength1
                     if 'combatant2' in t:
                         combatant2 = parse_combatant(t.get('combatant2').value.encode('utf-8'))
                         if combatant2 == 0:
                             d['uc_wounded'], d['uc_captured'], \
                             d['uc_killed'], d['uc_total'] = casualties2
+                            d['u_strength'] = strength2
                         if combatant2 == 1:
                             d['cc_wounded'], d['cc_captured'], \
                             d['cc_killed'], d['cc_total'] = casualties2
+                            d['c_strength'] = strength2
                         if combatant2 == 2:
                             d['ic_wounded'], d['ic_captured'], \
                             d['ic_killed'], d['ic_total'] = casualties2
+                            d['i_strength'] = strength2
                     d['combatants'] = combatant1 + combatant2
 
                     #Conflict
@@ -160,4 +173,5 @@ class WikipediaXMLToCSV:
 
 w = WikipediaXMLToCSV()
 infoboxes = ['Infobox military conflict', 'infobox military conflict']
+#w.clean_xml('battles/xml_data/battle_list_3.xml', infoboxes)
 w.convert_to_csv('battles/xml_data/', infoboxes, '../csv/civil_war_battles.csv')
