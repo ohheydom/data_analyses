@@ -4,6 +4,8 @@
 
 A brief analysis of all the major American Civil War battles.
 
+The analysis is available here: [http://www.ohheydom.com/analyses/civil_war_battles](http://www.ohheydom.com/analyses/civil_war_battles).
+
 ### Data
 
 Fields
@@ -42,9 +44,3 @@ Fields
 * ic_captured - Indian Casualties (captured)
 * ic_killed - Indian Casualties (killed)
 * ic_total - Indian Casualties (wounded + captured + killed)
-
-### Todo
-
-* Incorporate the sizes of the armies under u_strength, c_strength, i_strength
-* Start analyzing the data
-* Put data onto a map using longitude and latitude
