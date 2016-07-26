@@ -1,8 +1,10 @@
-# Should a Complete Game Shutout Under 100 Pitches Be Called a Maddux?
+# What's the Opposite of a Maddux?
 
 ### Information
 
 In baseball, a complete game shutout under 100 pitches is considered a Maddux, named after the first ballot Hall of Fame pitcher Greg Maddux. He was known for his extremely efficient games. Were there any other players more efficient than Greg Maddux? And what about the opposite, what would we call a complete game shutout over 125 pitches?
+
+The analysis is available here: [http://www.ohheydom.com/analyses/maddux](http://www.ohheydom.com/analyses/maddux).
 
 ### Data
 

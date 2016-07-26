@@ -4,7 +4,7 @@
 
 A basic analysis of IMDB's Top 250 Movies.
 
-The analysis is available here: [http://www.ohheydom.com/analyses/imdb_top_250](http://www.ohheydom.com/analyses/imdb_top_250).
+The analysis is available here: [http://www.ohheydom.com/analyses/imdb-top-250](http://www.ohheydom.com/analyses/imdb-top-250).
 
 ### Data
 

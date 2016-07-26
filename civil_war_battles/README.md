@@ -4,7 +4,7 @@
 
 A brief analysis of all the major American Civil War battles.
 
-The analysis is available here: [http://www.ohheydom.com/analyses/civil_war_battles](http://www.ohheydom.com/analyses/civil_war_battles).
+The analysis is available here: [http://www.ohheydom.com/analyses/civil-war-battles](http://www.ohheydom.com/analyses/civil-war-battles).
 
 ### Data
 

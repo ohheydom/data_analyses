@@ -8,7 +8,7 @@ A comparison between the lifespans of professional wrestlers, MLB, NFL, NHL, and
 * MLB and NFL datasets were downloaded and updated with recent deaths
 * All data visualizations were created using d3.js
 
-The analysis is available here: [http://www.ohheydom.com/analyses/wrestling_deaths](http://www.ohheydom.com/analyses/wrestling_deaths).
+The analysis is available here: [http://www.ohheydom.com/analyses/wrestling-deaths](http://www.ohheydom.com/analyses/wrestling-deaths).
 
 ### Data
 
