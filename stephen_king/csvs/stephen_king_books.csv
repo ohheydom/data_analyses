@@ -1,203 +1,204 @@
-title,type,book,book_year,good_reads_score,amazon_score,pseudonym
-Carrie,n,,1974,,,
-Salem's Lot,n,,1975,,,
-The Shining,n,,1977,,,
-Rage,n,,1977,,,Richard Bachman
-The Stand,n,,1978,,,
-The Long Walk,n,,1979,,,
-The Dead Zone,n,,1979,,,
-Firestarter,n,,1980,,,
-Roadwork,n,,1981,,,Richard Bachman
-Cujo,n,,1981,,,
-The Running Man,n,,1982,,,Richard Bachman
-The Dark Tower: The Gunslinger,n,,1982,,,
-Christine,n,,1983,,,
-Pet Sematary,n,,1983,,,
-Cycle of the Werewolf,n,,1983,,,
-The Talisman,n,,1984,,,
-Thinner,n,,1984,,,Richard Bachman
-It,n,,1986,,,
-The Eyes of the Dragon,n,,1987,,,
-The Dark Tower II: The Drawing of the Three,n,,1987,,,
-Misery,n,,1987,,,
-The Tommyknockers,n,,1987,,,
-The Dark Half,n,,1989,,,
-The Dark Tower III: The Waste Lands,n,,1991,,,
-Needful Things,n,,1991,,,
-Gerald's Game,n,,1992,,,
-Dolores Claiborne,n,,1992,,,
-Insomnia,n,,1994,,,
-Rose Madder,n,,1995,,,
-The Green Mile,n,,1996,,,
-Desperation,n,,1996,,,
-The Regulators,n,,1996,,,Richard Bachman
-The Dark Tower IV: Wizard and Glass,n,,1997,,,
-Bag of Bones,n,,1998,,,
-The Girl Who Loved Tom Gordon,n,,1999,,,
-The Plant,n,,2000,,,
-Dreamcatcher,n,,2001,,,
-Black House,n,,2001,,,
-From a Buick 8,n,,2002,,,
-The Dark Tower V: Wolves of the Calla,n,,2003,,,
-The Dark Tower VI: Song of Susannah,n,,2004,,,
-The Dark Tower VII: The Dark Tower,n,,2004,,,
-The Colorado Kid,n,,2005,,,
-Cell,n,,2006,,,
-Lisey's Story,n,,2006,,,
-Blaze,n,,2007,,,
-Duma Key,n,,2008,,,
-Under the Dome,n,,2009,,,
-11/22/63,n,,2011,,,
-The Dark Tower: The Wind Through the Keyhole,n,,2012,,,
-Joyland,n,,2013,,,
-Doctor Sleep,n,,2013,,,
-Mr. Mercedes,n,,2014,,,
-Revival,n,,2014,,,
-Finders Keepers,n,,2015,,,
-End of Watch,n,,2016,,,
-Night Shift,c,,1978,,,
-Different Seasons,c,,1982,,,
-Skeleton Crew,c,,1985,,,
-The Bachman Books,c,,1985,,,Richard Bachman
-Four Past Midnight,c,,1990,,,
-Nightmares & Dreamscapes,c,,1993,,,
-Hearts in Atlantis,c,,1999,,,
-Everything's Eventual,c,,2002,,,
-Just After Sunset,c,,2008,,,
-"Full Dark, No Stars",c,,2010,,,
-The Bazaar of Bad Dreams,c,,2015,,,
-Danse Macabre,nf,,1981,,,
-Nightmares in the Sky,nf,,1988,,,
-On Writing: A Memoir of the Craft,nf,,2000,,,
-Secret Windows: Essays and Fiction on the Craft of Writing,nf,,2000,,,
-Faithful,nf,,2005,,,
-Jerusalem's Lot,poc,Night Shift,,,,
-Graveyard Shift,poc,Night Shift,1970,,,
-Night Surf,poc,Night Shift,1969,,,
-I Am the Doorway,poc,Night Shift,1971,,,
-The Mangler,poc,Night Shift,1972,,,
-The Boogeyman,poc,Night Shift,1973,,,
-Gray Matter,poc,Night Shift,1973,,,
-Battleground,poc,Night Shift,1972,,,
-Trucks,poc,Night Shift,1973,,,
-Sometimes They Come Back,poc,Night Shift,1974,,,
-Strawberry Spring,poc,Night Shift,1968,,,
-The Ledge,poc,Night Shift,1976,,,
-The Lawnmower Man,poc,Night Shift,1975,,,
-"Quitters, Inc.",poc,Night Shift,,,,
-I Know What You Need,poc,Night Shift,1976,,,
-Children of the Corn,poc,Night Shift,1977,,,
-The Last Run on the ladder,poc,Night Shift,,,,
-The Man Who Loved Flowers,poc,Night Shift,1977,,,
-One for the Road,poc,Night Shift,1977,,,
-The Woman in the Room,poc,Night Shift,,,,
-Rita Hayworth and Shawshank Redemption: Hope Springs Eternal,poc,Different Seasons,1982,,,
-Apt Pupil: Summer of Corruption,poc,Different Seasons,1982,,,
-The Body: Fall from Innocence,poc,Different Seasons,1982,,,
-The Breathing Method: A Winter's Tale,poc,Different Seasons,1982,,,
-The Mist,poc,Skeleton Crew,1980,,,
-Here There Be Tygers,poc,Skeleton Crew,1968,,,
-The Monkey,poc,Skeleton Crew,1980,,,
-Cain Rose Up,poc,Skeleton Crew,1968,,,
-Mrs. Todd's Shortcut,poc,Skeleton Crew,1984,,,
-The Jaunt,poc,Skeleton Crew,1981,,,
-The Wedding Gig,poc,Skeleton Crew,1980,,,
-Paranoid: A Chant,poc,Skeleton Crew,,,,
-The Raft,poc,Skeleton Crew,1982,,,
-Word Processor of the Gods,poc,Skeleton Crew,1983,,,
-The Man Who Would Not Shake Hands,poc,Skeleton Crew,1981,,,
-Beachworld,poc,Skeleton Crew,1984,,,
-The Reaper's Image,poc,Skeleton Crew,1969,,,
-Nona,poc,Skeleton Crew,1978,,,
-For Owen,poc,Skeleton Crew,,,,
-Survivor's Type,poc,Skeleton Crew,1982,,,
-Uncle Otto's Truck,poc,Skeleton Crew,1983,,,
-Morning Deliveries (Milkman #1),poc,Skeleton Crew,,,,
-Big Wheels: A Tale of The Laundry Game (Milkman #2),poc,Skeleton Crew,1980,,,
-Gramma,poc,Skeleton Crew,1984,,,
-The Ballad of the Flexible Bullet,poc,Skeleton Crew,1984,,,
-The Reach,poc,Skeleton Crew,1981,,,
-The Langoliers,poc,Four Past Midnight,1990,,,
-"Secret Window, Secret Garden",poc,Four Past Midnight,1990,,,
-The Library Policeman,poc,Four Past Midnight,1990,,,
-The Sun Dog,poc,Four Past Midnight,1990,,,
-Dolan's Cadillac,poc,Nightmares & Dreamscapes,1985,,,
-The End of the Whole Mess,poc,Nightmares & Dreamscapes,1986,,,
-Suffer the Little Children,poc,Nightmares & Dreamscapes,1972,,,
-The Night Flier,poc,Nightmares & Dreamscapes,1988,,,
-Popsy,poc,Nightmares & Dreamscapes,1987,,,
-It Grows on You,poc,Nightmares & Dreamscapes,1973,,,
-Chattery Teeth,poc,Nightmares & Dreamscapes,1992,,,
-Dedication,poc,Nightmares & Dreamscapes,1988,,,
-The Moving Finger,poc,Nightmares & Dreamscapes,1990,,,
-Sneakers,poc,Nightmares & Dreamscapes,1988,,,
-You Know They Got a Hell of a Band,poc,Nightmares & Dreamscapes,1992,,,
-Home Delivery,poc,Nightmares & Dreamscapes,1989,,,
-Rainy Season,poc,Nightmares & Dreamscapes,1989,,,
-My Pretty Pony,poc,Nightmares & Dreamscapes,1989,,,
-"Sorry, Right Number",poc,Nightmares & Dreamscapes,,,,
-The Ten O'Clock People,poc,Nightmares & Dreamscapes,,,,
-Crouch End,poc,Nightmares & Dreamscapes,1980,,,
-The House on Maple Street,poc,Nightmares & Dreamscapes,,,,
-The Fifth Quarter,poc,Nightmares & Dreamscapes,1972,,,
-The Doctor's Case,poc,Nightmares & Dreamscapes,1987,,,
-Umney's Last Case,poc,Nightmares & Dreamscapes,,,,
-Head Down,poc,Nightmares & Dreamscapes,1990,,,
-Brooklyn August,poc,Nightmares & Dreamscapes,1971,,,
-The Beggar and the Diamond,poc,Nightmares & Dreamscapes,,,,
-Low Men in Yellow Coats,poc,Hearts in Atlantis,1999,,,
-Hearts in Atlantis,poc,Hearts in Atlantis,1999,,,
-Blind Willie,poc,Hearts in Atlantis,1999,,,
-Why We're in Vietnam,poc,Hearts in Atlantis,1999,,,
-Heavenly Shades of Night are Falling,poc,Hearts in Atlantis,1999,,,
-Autopsy Room Four,poc,Everything's Eventual,1997,,,
-The Man in the Black Suit,poc,Everything's Eventual,1994,,,
-All That You Love Will Be Carried Away,poc,Everything's Eventual,2001,,,
-The Death of Jack Hamilton,poc,Everything's Eventual,2001,,,
-In the Deathroom,poc,Everything's Eventual,1999,,,
-The Little Sisters of Eluria,poc,Everything's Eventual,1998,,,
-Everything's Eventual,poc,Everything's Eventual,1997,,,
-L.T.'s Theory of Pets,poc,Everything's Eventual,1997,,,
-The Road Virus Heads North,poc,Everything's Eventual,1999,,,
-Lunch at the Gotham Cafe,poc,Everything's Eventual,1995,,,
-"That Feeling, You Can Only Say What It Is in French",poc,Everything's Eventual,1998,,,
-1408,poc,Everything's Eventual,1999,,,
-Riding the Bullet,poc,Everything's Eventual,2000,,,
-Luckey Quarter,poc,Everything's Eventual,1995,,,
-Willa,poc,Just After Sunset,2006,,,
-The Gingerbread Girl,poc,Just After Sunset,2007,,,
-Harvey's Dream,poc,Just After Sunset,2003,,,
-Rest Stop,poc,Just After Sunset,2003,,,
-Stationary Bike,poc,Just After Sunset,2003,,,
-The Things They Left Behind,poc,Just After Sunset,2005,,,
-Graduation Afternoon,poc,Just After Sunset,2007,,,
-N.,poc,Just After Sunset,,,,
-The Cat from Hell,poc,Just After Sunset,1977,,,
-The New York Times at Special Bargain Rates,poc,Just After Sunset,2008,,,
-Mute,poc,Just After Sunset,2007,,,
-Ayana,poc,Just After Sunset,2007,,,
-A Very Tight Place,poc,Just After Sunset,2008,,,
-1922,poc,"Full Dark, No Stars",2010,,,
-Big Driver,poc,"Full Dark, No Stars",2010,,,
-Fair Extension,poc,"Full Dark, No Stars",2010,,,
-A Good Marriage,poc,"Full Dark, No Stars",2010,,,
-Mile 81,poc,The Bazaar of Bad Dreams,2011,,,
-Premium Harmony,poc,The Bazaar of Bad Dreams,2009,,,
-Batman and Robin Have an Altercation,poc,The Bazaar of Bad Dreams,2012,,,
-The Dune,poc,The Bazaar of Bad Dreams,2011,,,
-Bad Little Kid,poc,The Bazaar of Bad Dreams,,,,
-A Death,poc,The Bazaar of Bad Dreams,2015,,,
-The Bone Church,poc,The Bazaar of Bad Dreams,2009,,,
-Morality,poc,The Bazaar of Bad Dreams,2009,,,
-Afterlife,poc,The Bazaar of Bad Dreams,2013,,,
-Ur,poc,The Bazaar of Bad Dreams,2009,,,
-Herman Wouk Is Still Alive,poc,The Bazaar of Bad Dreams,2011,,,
-Under the Weather,poc,The Bazaar of Bad Dreams,2011,,,
-Blockade Billy,poc,The Bazaar of Bad Dreams,2010,,,
-Mister Yummy,poc,The Bazaar of Bad Dreams,,,,
-Tommy,poc,The Bazaar of Bad Dreams,2010,,,
-The Little Green God of Agony,poc,The Bazaar of Bad Dreams,2011,,,
-That Bus Is Another World,poc,The Bazaar of Bad Dreams,2014,,,
-Obits,poc,The Bazaar of Bad Dreams,,,,
-Drunken Fireworks,poc,The Bazaar of Bad Dreams,2015,,,
-Summer Thunder,poc,The Bazaar of Bad Dreams,2013,,,
+title,type,book,year,pseudonym,gr_link,gr_rating,gr_rating_count
+Different Seasons,c,,1982,,https://www.goodreads.com/book/show/39662.Different_Seasons,4.32,123874
+Everything's Eventual,c,,2002,,https://www.goodreads.com/book/show/10579.Everything_s_Eventual,3.92,60798
+Four Past Midnight,c,,1990,,https://www.goodreads.com/book/show/133266.Four_Past_Midnight,3.9,77312
+"Full Dark, No Stars",c,,2010,,https://www.goodreads.com/book/show/7912007-full-dark-no-stars,4.01,60348
+Hearts in Atlantis,c,,1999,,https://www.goodreads.com/book/show/11602.Hearts_in_Atlantis,3.78,64868
+Just After Sunset,c,,2008,,https://www.goodreads.com/book/show/2906039-just-after-sunset,3.84,34701
+Night Shift,c,,1978,,https://www.goodreads.com/book/show/10628.Night_Shift,3.95,102485
+Nightmares & Dreamscapes,c,,1993,,https://www.goodreads.com/book/show/10588.Nightmares_And_Dreamscapes,3.88,53750
+Skeleton Crew,c,,1985,,https://www.goodreads.com/book/show/13440.Skeleton_Crew,3.92,81991
+The Bachman Books,c,,1985,Richard Bachman,https://www.goodreads.com/book/show/10617.The_Bachman_Books,4.09,49231
+The Bazaar of Bad Dreams,c,,2015,,https://www.goodreads.com/book/show/23512999-the-bazaar-of-bad-dreams,3.94,18866
+11/22/63,n,,2011,,https://www.goodreads.com/book/show/10644930-11-22-63,4.28,255244
+Bag of Bones,n,,1998,,https://www.goodreads.com/book/show/10589.Bag_of_Bones,3.85,123927
+Black House,n,,2001,,https://www.goodreads.com/book/show/10607.Black_House,3.97,41068
+Blaze,n,,2007,,https://www.goodreads.com/book/show/349473.Blaze,3.6,25789
+Carrie,n,,1974,,https://www.goodreads.com/book/show/10592.Carrie,3.91,329565
+Cell,n,,2006,,https://www.goodreads.com/book/show/10567.Cell,3.63,136339
+Christine,n,,1983,,https://www.goodreads.com/book/show/10629.Christine,3.72,149708
+Cujo,n,,1981,,https://www.goodreads.com/book/show/10603.Cujo,3.62,150435
+Cycle of the Werewolf,n,,1983,,https://www.goodreads.com/book/show/550844.Cycle_of_the_Werewolf,3.6,32657
+Desperation,n,,1996,,https://www.goodreads.com/book/show/10584.Desperation,3.79,93568
+Doctor Sleep,n,,2013,,https://www.goodreads.com/book/show/16130549-doctor-sleep,4.1,99712
+Dolores Claiborne,n,,1992,,https://www.goodreads.com/book/show/7278752-dolores-claiborne,3.78,89460
+Dreamcatcher,n,,2001,,https://www.goodreads.com/book/show/11570.Dreamcatcher,3.56,109565
+Duma Key,n,,2008,,https://www.goodreads.com/book/show/472343.Duma_Key,3.91,71593
+End of Watch,n,,2016,,https://www.goodreads.com/book/show/25526965-end-of-watch,4.17,14064
+Finders Keepers,n,,2015,,https://www.goodreads.com/book/show/22453035-finders-keepers,4.03,42866
+Firestarter,n,,1980,,https://www.goodreads.com/book/show/233667.Firestarter,3.83,133581
+From a Buick 8,n,,2002,,https://www.goodreads.com/book/show/22076.From_a_Buick_8,3.41,46783
+Gerald's Game,n,,1992,,https://www.goodreads.com/book/show/32692.Gerald_s_Game,3.45,97235
+Insomnia,n,,1994,,https://www.goodreads.com/book/show/10585.Insomnia,3.77,98689
+It,n,,1986,,https://www.goodreads.com/book/show/830502.It,4.15,399371
+Joyland,n,,2013,,https://www.goodreads.com/book/show/13596166-joyland,3.9,71491
+Lisey's Story,n,,2006,,https://www.goodreads.com/book/show/10566.Lisey_s_Story,3.63,49643
+Misery,n,,1987,,https://www.goodreads.com/book/show/10614.Misery,4.08,309000
+Mr. Mercedes,n,,2014,,https://www.goodreads.com/book/show/18775247-mr-mercedes,3.89,111293
+Needful Things,n,,1991,,https://www.goodreads.com/book/show/107291.Needful_Things,3.87,152872
+Pet Sematary,n,,1983,,https://www.goodreads.com/book/show/10583.Pet_Sematary,3.88,263400
+Rage,n,,1977,Richard Bachman,https://www.goodreads.com/book/show/66370.Rage,3.79,19802
+Revival,n,,2014,,https://www.goodreads.com/book/show/20926278-revival,3.75,57930
+Roadwork,n,,1981,Richard Bachman,https://www.goodreads.com/book/show/10577.Roadwork,3.59,18484
+Rose Madder,n,,1995,,https://www.goodreads.com/book/show/10619.Rose_Madder,3.64,68964
+Salem's Lot,n,,1975,,https://www.goodreads.com/book/show/11590._Salem_s_Lot,3.98,228835
+The Colorado Kid,n,,2005,,https://www.goodreads.com/book/show/10574.The_Colorado_Kid,3.26,19918
+The Dark Half,n,,1989,,https://www.goodreads.com/book/show/11597.The_Dark_Half,3.74,94549
+The Dark Tower II: The Drawing of the Three,n,,1987,,https://www.goodreads.com/book/show/5094.The_Drawing_of_the_Three,4.22,132326
+The Dark Tower III: The Waste Lands,n,,1991,,https://www.goodreads.com/book/show/34084.The_Waste_Lands,4.22,115398
+The Dark Tower IV: Wizard and Glass,n,,1997,,https://www.goodreads.com/book/show/5096.Wizard_and_Glass,4.23,103978
+The Dark Tower V: Wolves of the Calla,n,,2003,,https://www.goodreads.com/book/show/4978.Wolves_of_the_Calla,4.16,90097
+The Dark Tower VI: Song of Susannah,n,,2004,,https://www.goodreads.com/book/show/5093.Song_of_Susannah,3.98,83011
+The Dark Tower VII: The Dark Tower,n,,2004,,https://www.goodreads.com/book/show/5091.The_Dark_Tower,4.25,89670
+The Dark Tower: The Gunslinger,n,,1982,,https://www.goodreads.com/book/show/43615.The_Gunslinger,4,302863
+The Dark Tower: The Wind Through the Keyhole,n,,2012,,https://www.goodreads.com/book/show/12341557-the-wind-through-the-keyhole,4.14,39244
+The Dead Zone,n,,1979,,https://www.goodreads.com/book/show/11573.The_Dead_Zone,3.89,130256
+The Eyes of the Dragon,n,,1987,,https://www.goodreads.com/book/show/10611.The_Eyes_of_the_Dragon,3.92,75616
+The Girl Who Loved Tom Gordon,n,,1999,,https://www.goodreads.com/book/show/11564.The_Girl_Who_Loved_Tom_Gordon,3.55,94998
+The Green Mile,n,,1996,,https://www.goodreads.com/book/show/11566.The_Green_Mile,4.41,172207
+The Long Walk,n,,1979,,https://www.goodreads.com/book/show/9014.The_Long_Walk,4.11,71768
+The Plant,n,,2000,,https://www.goodreads.com/book/show/13609593-the-plant,3.54,497
+The Regulators,n,,1996,Richard Bachman,https://www.goodreads.com/book/show/10596.The_Regulators,3.56,43605
+The Running Man,n,,1982,Richard Bachman,https://www.goodreads.com/book/show/11607.The_Running_Man,3.75,54846
+The Shining,n,,1977,,https://www.goodreads.com/book/show/11588.The_Shining,4.15,734816
+The Stand,n,,1978,,https://www.goodreads.com/book/show/149267.The_Stand,4.33,416783
+The Talisman,n,,1984,,https://www.goodreads.com/book/show/59219.The_Talisman,4.11,79099
+The Tommyknockers,n,,1987,,https://www.goodreads.com/book/show/17660.The_Tommyknockers,3.45,85912
+Thinner,n,,1984,Richard Bachman,https://www.goodreads.com/book/show/10605.Thinner,3.63,122303
+Under the Dome,n,,2009,,https://www.goodreads.com/book/show/6320534-under-the-dome,3.89,178683
+Danse Macabre,nf,,1981,,https://www.goodreads.com/book/show/11563.Danse_Macabre,3.61,19155
+Faithful,nf,,2005,,https://www.goodreads.com/book/show/32694.Faithful,3.8,3737
+Nightmares in the Sky,nf,,1988,,https://www.goodreads.com/book/show/116334.Nightmares_in_the_Sky,4.05,2429
+On Writing: A Memoir of the Craft,nf,,2000,,https://www.goodreads.com/book/show/10569.On_Writing,4.29,129872
+Secret Windows: Essays and Fiction on the Craft of Writing,nf,,2000,,https://www.goodreads.com/book/show/11596.Secret_Windows,4.02,868
+1408,poc,Everything's Eventual,1999,,https://www.goodreads.com/book/show/13366195-1408,3.95,4715
+1922,poc,"Full Dark, No Stars",2010,,https://www.goodreads.com/book/show/22844166-1922,3.76,401
+A Death,poc,The Bazaar of Bad Dreams,2015,,https://www.goodreads.com/book/show/25053608-a-death,3.63,566
+A Good Marriage,poc,"Full Dark, No Stars",2010,,https://www.goodreads.com/book/show/22844188-a-good-marriage,3.79,5806
+A Very Tight Place,poc,Just After Sunset,2008,,https://www.goodreads.com/book/show/22614235-a-very-tight-place,3.78,32
+Afterlife,poc,The Bazaar of Bad Dreams,2013,,https://www.goodreads.com/book/show/21845356-afterlife,3.72,85
+All That You Love Will Be Carried Away,poc,Everything's Eventual,2001,,https://www.goodreads.com/book/show/22369806-all-that-you-love-will-be-carried-away,3.35,52
+Apt Pupil: Summer of Corruption,poc,Different Seasons,1982,,https://www.goodreads.com/book/show/10618.Apt_Pupil,3.81,16569
+Autopsy Room Four,poc,Everything's Eventual,1997,,https://www.goodreads.com/book/show/31281039-autopsy-room-four,1,1
+Ayana,poc,Just After Sunset,2007,,https://www.goodreads.com/book/show/22614233-ayana,3.36,25
+Bad Little Kid,poc,The Bazaar of Bad Dreams,,,https://www.goodreads.com/book/show/27776390-bad-little-kid,4.18,106
+Batman and Robin Have an Altercation,poc,The Bazaar of Bad Dreams,2012,,https://www.goodreads.com/book/show/18740179-batman-and-robin-have-an-altercation,3.58,134
+Battleground,poc,Night Shift,1972,,https://www.goodreads.com/book/show/29543419-battleground,3.5,6
+Beachworld,poc,Skeleton Crew,1984,,https://www.goodreads.com/book/show/22023369-beachworld,2.92,49
+Big Driver,poc,"Full Dark, No Stars",2010,,https://www.goodreads.com/book/show/22844168-big-driver,3.96,1182
+Big Wheels: A Tale of The Laundry Game (Milkman #2),poc,Skeleton Crew,1980,,https://www.goodreads.com/book/show/22023385-big-wheels-a-tale-of-the-laundry-game,2.79,28
+Blind Willie,poc,Hearts in Atlantis,1999,,https://www.goodreads.com/book/show/17610432-blind-willie,3.29,17
+Blockade Billy,poc,The Bazaar of Bad Dreams,2010,,https://www.goodreads.com/book/show/7940591-blockade-billy,3.36,12429
+Brooklyn August,poc,Nightmares & Dreamscapes,1971,,https://www.goodreads.com/book/show/22081070-brooklyn-august,3.4,10
+Cain Rose Up,poc,Skeleton Crew,1968,,https://www.goodreads.com/book/show/18130715-cain-rose-up,2.9,52
+Chattery Teeth,poc,Nightmares & Dreamscapes,1992,,https://www.goodreads.com/book/show/22014288-chattery-teeth,3.86,37
+Children of the Corn,poc,Night Shift,1977,,https://www.goodreads.com/book/show/17826887-children-of-the-corn,3.83,2395
+Crouch End,poc,Nightmares & Dreamscapes,1980,,https://www.goodreads.com/book/show/18724009-crouch-end,3.61,84
+Dedication,poc,Nightmares & Dreamscapes,1988,,https://www.goodreads.com/book/show/22014786-dedication,3.13,30
+Dolan's Cadillac,poc,Nightmares & Dreamscapes,1985,,https://www.goodreads.com/book/show/155465.Dolan_s_Cadillac,3.89,1401
+Drunken Fireworks,poc,The Bazaar of Bad Dreams,2015,,https://www.goodreads.com/book/show/24796646-drunken-fireworks,3.47,1261
+Everything's Eventual,poc,Everything's Eventual,1997,,https://www.goodreads.com/book/show/10579.Everything_s_Eventual,3.92,60798
+Fair Extension,poc,"Full Dark, No Stars",2010,,https://www.goodreads.com/book/show/22844181-fair-extension,3.85,105
+For Owen,poc,Skeleton Crew,,,https://www.goodreads.com/book/show/24994731-for-owen,2.2,15
+Graduation Afternoon,poc,Just After Sunset,2007,,https://www.goodreads.com/book/show/22614223-graduation-afternoon,3.44,27
+Gramma,poc,Skeleton Crew,1984,,https://www.goodreads.com/book/show/155754.Gramma,3.74,163
+Graveyard Shift,poc,Night Shift,1970,,https://www.goodreads.com/book/show/29543190-graveyard-shift,3.43,14
+Gray Matter,poc,Night Shift,1973,,https://www.goodreads.com/book/show/10599.Gray_Matter_and_Other_Stories_from_Night_Shift,3.86,97
+Harvey's Dream,poc,Just After Sunset,2003,,https://www.goodreads.com/book/show/13102884-harvey-s-dream,3.7,155
+Head Down,poc,Nightmares & Dreamscapes,1990,,https://www.goodreads.com/book/show/22081055-head-down,2.87,15
+Hearts in Atlantis,poc,Hearts in Atlantis,1999,,https://www.goodreads.com/book/show/3429819-hearts-in-atlantis-misery,3.78,64868
+Heavenly Shades of Night are Falling,poc,Hearts in Atlantis,1999,,https://www.goodreads.com/book/show/22364146-heavenly-shades-of-night-are-falling,3.1,10
+Here There Be Tygers,poc,Skeleton Crew,1968,,https://www.goodreads.com/book/show/22023260-here-there-be-tygers,2.76,62
+Herman Wouk Is Still Alive,poc,The Bazaar of Bad Dreams,2011,,https://www.goodreads.com/book/show/13089256-herman-wouk-is-still-alive,3.46,121
+Home Delivery,poc,Nightmares & Dreamscapes,1989,,https://www.goodreads.com/book/show/20602881-home-delivery,3.46,39
+I Am the Doorway,poc,Night Shift,1971,,https://www.goodreads.com/book/show/16122067-i-am-the-doorway,3.62,130
+I Know What You Need,poc,Night Shift,1976,,https://www.goodreads.com/book/show/20776100-i-know-what-you-need,3.82,90
+In the Deathroom,poc,Everything's Eventual,1999,,https://www.goodreads.com/book/show/10621.In_the_Deathroom_and_Lunch_at_the_Gotham_Caf_,3.43,37
+It Grows on You,poc,Nightmares & Dreamscapes,1973,,https://www.goodreads.com/book/show/22014287-it-grows-on-you,3.23,26
+Jerusalem's Lot,poc,Night Shift,,,https://www.goodreads.com/book/show/23456351-jerusalem-s-lot,4.08,631
+L.T.'s Theory of Pets,poc,Everything's Eventual,1997,,https://www.goodreads.com/book/show/32668.LT_s_Theory_of_Pets,3.65,2074
+Low Men in Yellow Coats,poc,Hearts in Atlantis,1999,,https://www.goodreads.com/book/show/22351509-low-men-in-yellow-coats,4.3,63
+Luckey Quarter,poc,Everything's Eventual,1995,,,,
+Lunch at the Gotham Cafe,poc,Everything's Eventual,1995,,https://www.goodreads.com/book/show/23654529-lunch-at-the-gotham-cafe,3.5,202
+Mile 81,poc,The Bazaar of Bad Dreams,2011,,https://www.goodreads.com/book/show/12070846-mile-81,3.61,18441
+Mister Yummy,poc,The Bazaar of Bad Dreams,,,https://www.goodreads.com/book/show/27776396-mister-yummy,3.21,57
+Morality,poc,The Bazaar of Bad Dreams,2009,,https://www.goodreads.com/book/show/18220262-morality,3.18,354
+Morning Deliveries (Milkman #1),poc,Skeleton Crew,,,https://www.goodreads.com/book/show/22023379-morning-deliveries,3.09,33
+Mrs. Todd's Shortcut,poc,Skeleton Crew,1984,,https://www.goodreads.com/book/show/466506.Mrs_Todd_s_Shortcut,4.16,332
+Mute,poc,Just After Sunset,2007,,https://www.goodreads.com/book/show/22614231-mute,3.86,29
+My Pretty Pony,poc,Nightmares & Dreamscapes,1989,,https://www.goodreads.com/book/show/155405.My_Pretty_Pony,3.72,237
+N.,poc,Just After Sunset,,,https://www.goodreads.com/book/show/7006562-stephen-king-s-n,4.21,10234
+Night Surf,poc,Night Shift,1969,,https://www.goodreads.com/book/show/20747126-night-surf,2.89,76
+Nona,poc,Skeleton Crew,1978,,https://www.goodreads.com/book/show/22023374-nona,3.5,64
+Obits,poc,The Bazaar of Bad Dreams,,,https://www.goodreads.com/book/show/27776403-obits,3.65,109
+One for the Road,poc,Night Shift,1977,,https://www.goodreads.com/book/show/8476733-one-for-the-road,3.68,138
+Paranoid: A Chant,poc,Skeleton Crew,,,https://www.goodreads.com/book/show/22023280-paranoid,2.75,24
+Popsy,poc,Nightmares & Dreamscapes,1987,,https://www.goodreads.com/book/show/18690856-popsy,3.66,96
+Premium Harmony,poc,The Bazaar of Bad Dreams,2009,,https://www.goodreads.com/book/show/13093998-premium-harmony,3.16,153
+"Quitters, Inc.",poc,Night Shift,,,https://www.goodreads.com/book/show/11572.Quitters_Inc,3.94,4561
+Rainy Season,poc,Nightmares & Dreamscapes,1989,,https://www.goodreads.com/book/show/22035250-rainy-season,3.48,25
+Rest Stop,poc,Just After Sunset,2003,,https://www.goodreads.com/book/show/22614219-rest-stop,3.53,30
+Riding the Bullet,poc,Everything's Eventual,2000,,https://www.goodreads.com/book/show/11605.Riding_the_Bullet,3.59,10101
+Rita Hayworth and Shawshank Redemption: Hope Springs Eternal,poc,Different Seasons,1982,,https://www.goodreads.com/book/show/26001477-rita-hayworth-and-the-shawshank-redemption,4.51,10071
+"Secret Window, Secret Garden",poc,Four Past Midnight,1990,,https://www.goodreads.com/book/show/133268.Two_Past_Midnight,3.93,5748
+Sneakers,poc,Nightmares & Dreamscapes,1988,,https://www.goodreads.com/book/show/22029863-sneakers,3.28,43
+Sometimes They Come Back,poc,Night Shift,1974,,https://www.goodreads.com/book/show/17797820-sometimes-they-come-back,3.85,526
+"Sorry, Right Number",poc,Nightmares & Dreamscapes,,,https://www.goodreads.com/book/show/22038602-sorry-right-number,3.62,13
+Stationary Bike,poc,Just After Sunset,2003,,https://www.goodreads.com/book/show/10575.Stationary_Bike,3.45,2179
+Strawberry Spring,poc,Night Shift,1968,,https://www.goodreads.com/book/show/20774925-strawberry-spring,3.75,72
+Suffer the Little Children,poc,Nightmares & Dreamscapes,1972,,https://www.goodreads.com/book/show/21899390-suffer-the-little-children,3.68,63
+Summer Thunder,poc,The Bazaar of Bad Dreams,2013,,https://www.goodreads.com/book/show/24908465-summer-thunder,3.76,55
+Survivor's Type,poc,Skeleton Crew,1982,,https://www.goodreads.com/book/show/17160738-survivor-type,4,363
+That Bus Is Another World,poc,The Bazaar of Bad Dreams,2014,,https://www.goodreads.com/book/show/22888764-that-bus-is-another-world,3.4,81
+"That Feeling, You Can Only Say What It Is in French",poc,Everything's Eventual,1998,,,,
+The Ballad of the Flexible Bullet,poc,Skeleton Crew,1984,,https://www.goodreads.com/book/show/16165178-the-ballad-of-the-flexible-bullet,3.84,104
+The Beggar and the Diamond,poc,Nightmares & Dreamscapes,,,https://www.goodreads.com/book/show/22081073-the-beggar-and-the-diamond,3.75,16
+The Body: Fall from Innocence,poc,Different Seasons,1982,,https://www.goodreads.com/book/show/11574.The_Body,4.25,22747
+The Bone Church,poc,The Bazaar of Bad Dreams,2009,,https://www.goodreads.com/book/show/27739255-the-bone-church,2.25,52
+The Boogeyman,poc,Night Shift,1973,,https://www.goodreads.com/book/show/18413788-the-boogeyman,3.78,269
+The Breathing Method: A Winter's Tale,poc,Different Seasons,1982,,https://www.goodreads.com/book/show/10580.The_Breathing_Method,3.69,3519
+The Cat from Hell,poc,Just After Sunset,1977,,https://www.goodreads.com/book/show/13562734-the-cat-from-hell,3.53,196
+The Death of Jack Hamilton,poc,Everything's Eventual,2001,,,,
+The Doctor's Case,poc,Nightmares & Dreamscapes,1987,,https://www.goodreads.com/book/show/25005744-the-fifth-quarter,2.75,20
+The Dune,poc,The Bazaar of Bad Dreams,2011,,https://www.goodreads.com/book/show/15313502-the-dune,3.81,257
+The End of the Whole Mess,poc,Nightmares & Dreamscapes,1986,,https://www.goodreads.com/book/show/29232299-the-end-of-the-whole-mess,3.47,15
+The Fifth Quarter,poc,Nightmares & Dreamscapes,1972,,https://www.goodreads.com/book/show/25005744-the-fifth-quarter,2.75,20
+The Gingerbread Girl,poc,Just After Sunset,2007,,https://www.goodreads.com/book/show/1793995.The_Gingerbread_Girl,3.6,2974
+The House on Maple Street,poc,Nightmares & Dreamscapes,,,https://www.goodreads.com/book/show/30053837-the-house-on-maple-street,3.2,5
+The Jaunt,poc,Skeleton Crew,1981,,https://www.goodreads.com/book/show/6296531-the-jaunt-travel,4.17,493
+The Langoliers,poc,Four Past Midnight,1990,,https://www.goodreads.com/book/show/102733.One_Past_Midnight,3.77,22512
+The Last Run on the ladder,poc,Night Shift,,,https://www.goodreads.com/book/show/20776217-the-last-rung-on-the-ladder,4.03,92
+The Lawnmower Man,poc,Night Shift,1975,,https://www.goodreads.com/book/show/102686.The_Lawnmower_Man,3.72,2948
+The Ledge,poc,Night Shift,1976,,https://www.goodreads.com/book/show/18811972-the-ledge,3.92,84
+The Library Policeman,poc,Four Past Midnight,1990,,https://www.goodreads.com/book/show/133267.Three_Past_Midnight,3.77,3453
+The Little Green God of Agony,poc,The Bazaar of Bad Dreams,2011,,https://www.goodreads.com/book/show/15817963-the-little-green-god-of-agony,3.36,120
+The Little Sisters of Eluria,poc,Everything's Eventual,1998,,https://www.goodreads.com/book/show/6356190-the-little-sisters-of-eluria,4.25,12700
+The Man in the Black Suit,poc,Everything's Eventual,1994,,https://www.goodreads.com/book/show/10587.The_Man_in_the_Black_Suit,3.81,947
+The Man Who Loved Flowers,poc,Night Shift,1977,,https://www.goodreads.com/book/show/20779185-the-man-who-loved-flowers,3.45,107
+The Man Who Would Not Shake Hands,poc,Skeleton Crew,1981,,https://www.goodreads.com/book/show/22023288-the-man-who-would-not-shake-hands,3.31,35
+The Mangler,poc,Night Shift,1972,,https://www.goodreads.com/book/show/15761987-the-mangler,3.56,228
+The Mist,poc,Skeleton Crew,1980,,https://www.goodreads.com/book/show/813214.The_Mist,3.9,73103
+The Monkey,poc,Skeleton Crew,1980,,https://www.goodreads.com/book/show/32714.The_Monkey,3.71,435
+The Moving Finger,poc,Nightmares & Dreamscapes,1990,,https://www.goodreads.com/book/show/22017418-the-moving-finger,3.35,48
+The New York Times at Special Bargain Rates,poc,Just After Sunset,2008,,https://www.goodreads.com/book/show/15776445-the-new-york-times-at-special-bargain-rates,3.47,36
+The Night Flier,poc,Nightmares & Dreamscapes,1988,,https://www.goodreads.com/book/show/21901643-the-night-flier,3.63,57
+The Raft,poc,Skeleton Crew,1982,,https://www.goodreads.com/book/show/24149977-the-raft,3.8,87
+The Reach,poc,Skeleton Crew,1981,,https://www.goodreads.com/book/show/22023394-the-reach,3.4,45
+The Reaper's Image,poc,Skeleton Crew,1969,,https://www.goodreads.com/book/show/8470110-skeleton-crew,3.47,60
+The Road Virus Heads North,poc,Everything's Eventual,1999,,https://www.goodreads.com/book/show/10848249-the-road-virus-heads-north,3.77,397
+The Sun Dog,poc,Four Past Midnight,1990,,https://www.goodreads.com/book/show/3365119-four-past-midnight,3.76,1619
+The Ten O'Clock People,poc,Nightmares & Dreamscapes,,,https://www.goodreads.com/book/show/22094876-the-ten-o-clock-people,3.28,47
+The Things They Left Behind,poc,Just After Sunset,2005,,https://www.goodreads.com/book/show/22614222-the-things-they-left-behind,3.54,39
+The Wedding Gig,poc,Skeleton Crew,1980,,https://www.goodreads.com/book/show/22023277-the-wedding-gig,2.9,30
+The Woman in the Room,poc,Night Shift,,,https://www.goodreads.com/book/show/21877382-the-woman-in-the-room,3.21,73
+Tommy,poc,The Bazaar of Bad Dreams,2010,,https://www.goodreads.com/book/show/29232442-tommy,2.11,19
+Trucks,poc,Night Shift,1973,,https://www.goodreads.com/book/show/2884647-trucks,3.3,137
+Umney's Last Case,poc,Nightmares & Dreamscapes,,,https://www.goodreads.com/book/show/409076.Umney_s_Last_Case,3.78,744
+Uncle Otto's Truck,poc,Skeleton Crew,1983,,https://www.goodreads.com/book/show/22023377-uncle-otto-s-truck,3.34,35
+Under the Weather,poc,The Bazaar of Bad Dreams,2011,,https://www.goodreads.com/book/show/28599478-under-the-weather,3.59,87
+Ur,poc,The Bazaar of Bad Dreams,2009,,https://www.goodreads.com/book/show/6251012-ur,3.62,12375
+Why We're in Vietnam,poc,Hearts in Atlantis,1999,,https://www.goodreads.com/book/show/22364138-why-we-re-in-vietnam,3,9
+Willa,poc,Just After Sunset,2006,,https://www.goodreads.com/book/show/22614216-willa,3.56,68
+Word Processor of the Gods,poc,Skeleton Crew,1983,,https://www.goodreads.com/book/show/2889265-word-processor-of-the-gods,3.82,190
+You Know They Got a Hell of a Band,poc,Nightmares & Dreamscapes,1992,,https://www.goodreads.com/book/show/22034615-you-know-they-got-a-hell-of-a-band,3.94,31
+In the Tall Grass,ss,,2012,,https://www.goodreads.com/book/show/15825932-in-the-tall-grass,3.65,8720

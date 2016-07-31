@@ -2,6 +2,8 @@
 
 ## Data
 
+All the data was scraped on July 30th, 2016.
+
 stephen_king_books
 
 Type:
