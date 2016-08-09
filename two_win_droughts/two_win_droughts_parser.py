@@ -35,49 +35,51 @@ def alternate_wins(start_year):
     d = {}
     for f in range(start_year, 2016):
         games = pd.read_csv('data/GL{}.TXT'.format(f), header=None)
-        teams = set(games[6])
+        temp_d = {}
 
-        for t in teams:
-            streak = 0
-            longest_streak = 0
-            current = None
-            past = None
-            start_date = None
-            end_date = None
-            gs = games[(games[3] == t) | (games[6] == t)].sort_values([0, 1])
-            for i, (_, g) in enumerate(gs.iterrows()):
-                if g[3] == t: #Away Team
-                    current = 'w' if g[9] > g[10] else 'l'
+        gs = games.sort_values([0, 1])
+        for i, (_, g) in enumerate(gs.iterrows()):
+            h, a = g[6], g[3]
+            for v in [a, h]:
+                if not v in temp_d:
+                    temp_d[v] = { 'past': None, 'current': None, 'streak': 0, 't_start_date': g[0], 'start_date': None, 'end_date': None, 'c_streak': 0 }
+            if g[9] == g[10]:
+                if temp_d[v]['streak'] < temp_d[v]['c_streak']:
+                    temp_d[v]['streak'] = temp_d[v]['c_streak']
+                    temp_d[v]['end_date'] = g[0]
+                    temp_d[v]['start_date'] = temp_d[v]['t_start_date']
+                temp_d[v]['c_streak'] = 1
+                temp_d[v]['t_start_date'] = g[0]
+                continue
 
-                    if current != past:
-                        streak += 1
-                    else:
-                        if longest_streak < streak:
-                            longest_streak = streak
-                            end_date = g[0]
-                            start_date = gs.iloc[i-streak][0]
-                        streak = 1
-                    past = current
-                else: #Home Team
-                    current = 'w' if g[10] > g[9] else 'l'
+            if g[9] > g[10]:
+                temp_d[a]['current'] = 'w'
+                temp_d[h]['current'] = 'l'
+            else:
+                temp_d[a]['current'] = 'l'
+                temp_d[h]['current'] = 'w'
 
-                    if current != past:
-                        streak += 1
-                    else:
-                        if longest_streak < streak:
-                            longest_streak = streak
-                            start_date = gs.iloc[i-streak][0]
-                            end_date = g[0]
-                        streak = 1
-                    past = current
+            for v in [a, h]:
+                if temp_d[v]['current'] != temp_d[v]['past']:
+                    temp_d[v]['c_streak'] += 1
+                else:
+                    if temp_d[v]['streak'] < temp_d[v]['c_streak']:
+                        temp_d[v]['streak'] = temp_d[v]['c_streak']
+                        temp_d[v]['end_date'] = g[0]
+                        temp_d[v]['start_date'] = temp_d[v]['t_start_date']
+                    temp_d[v]['c_streak'] = 1
+                    temp_d[v]['t_start_date'] = g[0]
 
+                temp_d[v]['past'] = temp_d[v]['current']
+
+        for (t, v) in temp_d.iteritems():
             if t in tn:
                 t = tn[t]
             if not t in d:
-                d[t] = {'streak': longest_streak , 'start_date': start_date, 'end_date': end_date}
+                d[t] = { k: v[k] for k in ['streak', 'start_date', 'end_date'] }
             else:
-                if d[t]['streak'] < longest_streak:
-                    d[t] = {'streak': longest_streak, 'start_date': start_date, 'end_date': end_date}
+                if d[t]['streak'] < v['streak']:
+                    d[t] = { k: v[k] for k in ['streak', 'start_date', 'end_date'] }
     return d
 
 def two_wins(start_year):
@@ -131,12 +133,23 @@ def two_wins(start_year):
                     d[t] = {'streak': longest_streak, 'start_date': start_date, 'end_date': end_date}
     return d
 
-start_year = 1900
+def test_alternating_wins(d):
+    assert d['Baltimore Orioles']['streak'] == 10, 'Incorrect value for the Orioles'
+    assert d['Chicago Cubs']['streak'] == 15, 'Incorrect value for the Cubs'
+    assert d['Kansas City Royals']['streak'] == 13, 'Incorrect value for the Royals'
 
+def test_two_wins(d):
+    assert d['Baltimore Orioles']['streak'] == 42, 'Incorrect value for the Orioles'
+    assert d['Chicago Cubs']['streak'] == 53, 'Incorrect value for the Cubs'
+    assert d['Kansas City Royals']['streak'] == 38, 'Incorrect value for the Royals'
+
+start_year = 1900
 alt = alternate_wins(start_year)
+test_alternating_wins(alt)
 alt_file = 'txts/alternating-w-l'
 write_file(alt, alt_file)
 
-two = two_wins(start_year)
-two_file = 'txts/two-win-droughts'
-write_file(two, two_file)
+#two = two_wins(start_year)
+#test_two_wins(two)
+#two_file = 'txts/two-win-droughts'
+#write_file(two, two_file)
