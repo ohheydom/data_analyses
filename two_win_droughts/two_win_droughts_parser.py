@@ -97,6 +97,18 @@ def two_wins(start_year):
             for v in [h, a]:
                 if not v in td:
                     td[v] = { 'w_streak': 0, 'c_streak': 0, 'streak': 0, 't_start_date': g[0], 'start_date': None, 'end_date': None}
+            if g[9] == g[10]:
+                for v in [a, h]:
+                    if td[v]['w_streak'] >= 2:
+                        td[v]['t_start_date'] = g[0]
+                    td[v]['w_streak'] = 0
+                    td[v]['c_streak'] += 1
+                    if td[v]['c_streak'] > td[v]['streak']:
+                        td[v]['streak'] = td[v]['c_streak']
+                        td[v]['end_date'] = g[0]
+                        td[v]['start_date'] = td[v]['t_start_date']
+                continue
+                
             if g[9] > g[10]: 
                 w, l = a, h
             else:
@@ -114,6 +126,7 @@ def two_wins(start_year):
                 td[w]['c_streak'] = 0
             else:
                 td[w]['c_streak'] += 1
+
             td[l]['w_streak'] = 0
             td[l]['c_streak'] += 1
         d = update_dict(d, td, tn)
@@ -129,13 +142,13 @@ def test_two_wins(d):
     assert d['Chicago Cubs']['streak'] == 53, 'Incorrect value for the Cubs'
     assert d['Kansas City Royals']['streak'] == 38, 'Incorrect value for the Royals'
 
-start_year = 2010
-#alt = alternate_wins(start_year)
-#test_alternating_wins(alt)
-#alt_file = 'txts/alternating-w-l'
-#write_file(alt, alt_file)
+start_year = 1900
+alt = alternate_wins(start_year)
+test_alternating_wins(alt)
+alt_file = 'txts/alternating-w-l'
+write_file(alt, alt_file)
 
 two = two_wins(start_year)
-#test_two_wins(two)
-#two_file = 'txts/two-win-droughts'
-#write_file(two, two_file)
+test_two_wins(two)
+two_file = 'txts/two-win-droughts'
+write_file(two, two_file)
