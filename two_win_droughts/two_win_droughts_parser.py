@@ -38,7 +38,7 @@ def update_dict(d, new_d, tn):
         if not t in d:
             d[t] = { k: v[k] for k in ['streak', 'start_date', 'end_date'] }
         else:
-            if d[t]['streak'] < v['streak']:
+            if d[t]['streak'] <= v['streak']:
                 d[t] = { k: v[k] for k in ['streak', 'start_date', 'end_date'] }
     return d
 
@@ -145,10 +145,10 @@ def test_two_wins(d):
 start_year = 1900
 alt = alternate_wins(start_year)
 test_alternating_wins(alt)
-alt_file = 'txts/alternating-w-l'
+alt_file = 'txts/alternating-w-l2'
 write_file(alt, alt_file)
 
 two = two_wins(start_year)
 test_two_wins(two)
-two_file = 'txts/two-win-droughts'
+two_file = 'txts/two-win-droughts2'
 write_file(two, two_file)
